@@ -1,0 +1,11 @@
+CRITICAL - 2022-11-16 21:16:31 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\EmpresaController.php on line 306.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\EmpresaController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmpresaController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmpresaController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\EmpresaController')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\EmpresaController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

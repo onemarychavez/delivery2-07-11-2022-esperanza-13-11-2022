@@ -1,0 +1,17 @@
+ERROR - 2022-11-25 22:31:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'nombre as `departamento`, `municipios`.*nombre as `municipio`
+FROM `sucursales`
+' at line 1 in C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `sucursa...', 0)
+#1 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sucursa...')
+#2 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sucursa...')
+#3 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sucursa...', Array, false)
+#4 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\app\Controllers\SucursalController.php(62): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\CodeIgniter.php(898): App\Controllers\SucursalController->list()
+#8 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SucursalController))
+#9 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\HP\Desktop\delivery2-07-11-2022-esperanza-13-11-2022\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\HP\\Des...')
+#12 {main}
